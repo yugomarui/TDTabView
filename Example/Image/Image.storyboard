@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w7b-Dd-OlL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="uhW-0u-sV9">
+            <objects>
+                <navigationController id="w7b-Dd-OlL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wtj-ij-Y1l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sQK-Zm-afp" kind="relationship" relationship="rootViewController" id="HEy-9W-ZWu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kUl-tn-O51" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-467" y="106"/>
+        </scene>
+        <!--Image-->
+        <scene sceneID="axe-yp-yBR">
+            <objects>
+                <viewController id="sQK-Zm-afp" customClass="ImageViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bXd-PZ-0Ui">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tokyotower" translatesAutoresizingMaskIntoConstraints="NO" id="lbB-1Z-Dx1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m1w-ej-8Bj"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lbB-1Z-Dx1" firstAttribute="top" secondItem="m1w-ej-8Bj" secondAttribute="top" id="GnQ-NF-RFI"/>
+                            <constraint firstAttribute="bottom" secondItem="lbB-1Z-Dx1" secondAttribute="bottom" id="Uy1-AJ-24D"/>
+                            <constraint firstItem="m1w-ej-8Bj" firstAttribute="trailing" secondItem="lbB-1Z-Dx1" secondAttribute="trailing" id="k6G-4d-KQA"/>
+                            <constraint firstItem="lbB-1Z-Dx1" firstAttribute="leading" secondItem="m1w-ej-8Bj" secondAttribute="leading" id="lLB-QA-LVx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image" id="X3F-Fx-yk9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="fyF-U0-b6H">
+                            <connections>
+                                <action selector="didTapRightButton:" destination="sQK-Zm-afp" id="bET-2I-T2c"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXD-01-KXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378" y="106"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tokyotower" width="647" height="1200"/>
+    </resources>
+</document>
