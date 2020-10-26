@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "TDTabView"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Three dimensions Tab View like Safari."
   spec.description  = <<-DESC
   Three dimensions Tab View like Safari.
